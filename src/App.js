@@ -1,16 +1,14 @@
 import React from "react";
-import { CounterProvider } from "./context/CounterContext";
-import CounterDisplay from "./components/CounterDisplay";
-import CounterControls from "./components/CounterControls";
-
+import SignUpForm from "./components/SignUpForm";
+import NotesApp from "./components/NotesApp";
+import "./styles/App.css"
 function App() {
   return (
-    <CounterProvider>
-      <div style={{ textAlign: "center", marginTop: "50px" }}>
-        <CounterDisplay />
-        <CounterControls />
-      </div>
-    </CounterProvider>
+    <div className="App">
+      <h1 className="hello-world">Hello World Page</h1>
+      <SignUpForm />
+      <NotesApp />
+    </div>
   );
 }
 
